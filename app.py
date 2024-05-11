@@ -79,7 +79,7 @@ def main():
         # Generate comments for each type
         generated_comments = {}
         for comment_type, prompt in prompts.items():
-            generated_comment = generator(prompt, max_length=50, num_return_sequences=1)[0]['generated_text']
+            generated_comment = generator(prompt, max_length=150, num_return_sequences=1)[0]['generated_text']
             generated_comments[comment_type] = generated_comment
 
         # Print the generated comments for each type
